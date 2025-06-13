@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-autowire="byType">
+ 
+   
+    <bean id="pr1" class="Product.App.ProductDetails">
+        <property name="pid" value="101"/>
+        <property name="pname" value="Phone"/>
+        <property name="price" value="25000"/>
+    </bean>
+ 
+ 
+    <bean id="c1" class="Product.App.Cart" autowire="byType">
+        <property name="cartid" value="1001"/>
+        <property name="name" value="Phone"/>
+        <property name="price" value="25000"/>
+        
+    </bean>
+ 
+ 
+   
+ 
+ 
+</beans>
